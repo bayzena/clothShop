@@ -1,7 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { Outlet } from "react-router-dom";
 
-import NavbarNavigation from "./NavbarNavigation/NavbarNavigation";
 import { Icon } from "assets";
 import styles from "./Header.module.scss";
 
@@ -31,11 +30,6 @@ const Header: FC<IProps> = ({ children }) => {
           <h1>Название</h1>
         </div>
       </header>
-
-      <div className="d-flex">
-        <NavbarNavigation />
-        <Outlet />
-      </div>
     </>
   );
 };

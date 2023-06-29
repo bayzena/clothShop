@@ -9,11 +9,7 @@ import "./App.css";
 function App() {
   return (
     <Routes>
-      <Route path={MAIN} element={<HeaderContainer />}>
-        {pages.map(({ path, element }) => (
-          <Route key={path} path={path} element={element} />
-        ))}
-      </Route>
+      <Route path={MAIN} element={<HeaderContainer />}></Route>
     </Routes>
   );
 }
